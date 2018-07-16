@@ -1,0 +1,330 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font, Arial, sans-serif
+	overflow-x: hidden
+	background-color: #fbfbfb
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+a
+	text-decoration: none
+
+a, button
+	outline: none
+
+h2
+	font-size: 28px
+	position: relative
+	text-align: center
+	margin-bottom: 50px
+	&:before
+		content: ''
+		position: absolute
+		bottom: -20px
+		width: 70px
+		height: 2px
+		background-color: #333
+
+h3
+	font-size: 24px
+	font-weight: 500
+
+.main
+	background-image: url(../img/bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: bottom
+
+.header
+	width: 1240px
+	padding: 20px 0
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: space-between
+	.logo
+		display: flex
+		align-items: center
+		.logo__img
+			width: 30px
+			height: 30px
+		.logo__name
+			margin: 0 0 0 10px
+			text-transform: uppercase
+			font-weight: 700
+			letter-spacing: 4px
+			font-size: 20px
+	.logo-cont__desc
+		margin: 0
+
+.nav
+	.nav__button
+		text-decoration: none
+		color: #333
+		padding: 10px 20px
+		text-transform: uppercase
+		transition: .3s
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			background-color: $accent
+			width: 0
+			height: 2px
+		&:hover
+			color: $accent
+			&:before
+				width: 100%
+				transition: .3s
+
+.phone
+	.phone__number
+		font-size: 20px
+		font-weight: 700
+		color: #333
+		letter-spacing: 0.06em
+	.phone__desc
+		margin: 0
+
+.main-content
+	width: 1240px
+	margin: 40px auto
+	display: flex
+	justify-content: space-between
+.left-content
+	h1
+		font-size: 40px
+		text-transform: uppercase
+		letter-spacing: 0.04em
+		margin: 0
+.left-content__utp
+	font-size: 30px
+	font-weight: 300
+	margin: 0
+
+.left-content__price
+	font-size: 34px
+	font-weight: 700
+	span
+		font-size: 20px
+		opacity: .5
+		margin-left: 20px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			top: 50%
+			transform: rotate(15deg)
+			background-color: red
+
+.coupon
+	background-image: url(../img/coupon.png)
+	background-repeat: no-repeat
+	background-size: contain
+	display: flex
+	justify-content: space-between
+	height: 240px
+	color: #fff
+	.coupon-desc
+		padding: 20px 30px
+		.coupon-desc__text
+			font-size: 22px
+			padding-bottom: 15px
+			b
+				display: block
+		.coupon-desc__but
+			padding: 20px 100px
+	.coupon-img
+		height: 150px
+		padding: 30px 65px 0 0
+
+.but
+	color: #fff
+	background-color: $accent
+	border-radius: 10px
+	padding: 15px 30px
+	border: 2px solid $accent
+	box-shadow: $shadow
+	text-transform: uppercase
+	font-weight: 700
+	letter-spacing: 2px
+	&:hover
+		transition: .3s
+		background-color: rgba(0,0,0,0)
+		box-shadow: none
+		color: $accent
+
+.head-galery
+	width: 400px
+	.head-galery__item
+		text-align: center
+		.white-tab
+			background-color: #fff
+			display: flex
+			align-items: center
+			justify-content: center
+			box-shadow: $shadow
+			padding: 0 20px
+			margin: 0 15px 20px 15px
+			border-radius: 30px
+			i
+				margin-right: 10px
+	.owl-nav
+		text-align: center
+		position: relative
+		bottom: 50px
+		button.owl-prev, button.owl-next
+			width: 50px
+			height: 50px
+			background: #fff
+			box-shadow: $shadow
+			margin: 0 20px
+			border-radius: 100%
+			line-height: 4em
+			&:hover
+				color: $accent
+				transition: .3s
+				box-shadow: none
+
+.binocular
+	h2:before
+		left: calc(50% - 35px)
+
+.top-char
+	display: flex
+	width: 1240px
+	margin: 0 auto
+	justify-content: space-between
+	.top-char-item
+		flex: 1
+		background-size: cover
+		border-radius: 10px
+		color: #fff
+		text-align: center
+		font-weight: 700
+		letter-spacing: 1px
+		line-height: 2em
+
+	.top-char1
+		background-image: url('../img/char1.jpg')
+	.top-char2
+		background-image: url('../img/char2.jpg')
+		margin: 0 20px
+
+	.top-char3
+		background-image: url('../img/char3.jpg')
+
+.binocular-desc
+	width: 1240px
+	margin: 40px auto -60px
+	display: flex
+	.binocular-desc__text
+		font-size: 20px
+h3
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -10px
+		width: 70px
+		height: 2px
+		background-color: $accent
+
+.binocular-desc1
+	.binocular-desc__text
+		margin-left: 40px
+
+.binocular-char
+	width: 1240px
+	margin: -120px auto 0 auto
+	h3
+		text-align: center
+		&:before
+			left: calc(50% - 35px)
+.binocular-char-wrap
+	display: flex
+	font-size: 20px
+	.char-list
+		padding-left: 0
+		li
+			list-style-type: none
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				width: 50px
+				height: 1px
+				background-color: #333
+				top: 48%
+			&:after
+				content: ''
+				position: absolute
+				width: 6px
+				height: 6px
+				background-color: #333
+				transform: rotate(45deg)
+				top: 42%
+	.list-left
+		text-align: right
+		flex: 1
+		padding-right: 40px
+		li
+			&:before, &:after
+				right: -70px
+
+	.list-right
+		flex: 1
+		padding-left: 40px
+		li
+			&:before, &:after
+				left: -70px
+
+	.binocular-char__img
+		width: 350px
+		height: 100%
+
+.button-wrap
+	text-align: center
+
+.coupon2
+	margin: 70px auto
+	width: 1240px
+	background-size: cover
+	height: 390px
+	.coupon-desc
+		padding: 20px 60px
+		.coupon-desc__name
+			font-size: 40px
+			font-weight: 700
+			text-transform: uppercase
+			color: $accent
+		.coupon-desc__text
+			font-size: 36px
+			font-weight: 300
+			b
+				font-weight: 700
+@import "media" // Always at the end
