@@ -12,9 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- Template Basic Images End -->
 	
@@ -40,7 +38,7 @@
 				</div>
 				<p class="logo-cont__desc">Интернет-Магазин Биноклей</p>
 			</div>
-			<nav class="nav">
+			<nav id="nav" class="nav">
 				<a href="#description" class="nav__button">О компании</a>
 				<a href="#characteristics" class="nav__button">Характеристики</a>
 				<a href="#reviews" class="nav__button">Отзывы</a>
@@ -52,6 +50,10 @@
 				<a href="tel:+78005552739" class="phone__number">8 (800) 555-27-39</a>
 				<p class="phone__desc">Бесплатный звонок по РФ</p>
 			</div>
+			<div class="hidden-wrap">
+			<a href="tel:+78005552739" class="phone-hidden nav-h"><i class="material-icons">call</i></a>
+			<a href="#nav" class="menu-hidden nav-h"><i class="material-icons">menu</i></a>
+			</div>
 		</header>
 
 		<div class="main-content">
@@ -59,41 +61,61 @@
 				<h1>Немецкий бинокль Bresser</h1>
 				<p class="left-content__utp">Наслаждайтесь красатой природных пейзажей<br>на любом расстоянии с лучшей оптикой</p>
 				<p class="left-content__price">2 990 ₽ <span>4 500 ₽</span></p>
-				<div class="coupon">
+				<div class="coupon coupon3">
 					<div class="coupon-desc">
 						<p class="coupon-desc__text">Купите бинокль и получите <b>охотничий фонарик в подарок</b></p>
-						<a href="#coupon" class="but coupon-desc__but">Заказать с подарком</a>
+						<a data-fancybox data-src="#hidden-form" href="javascript:;" class="but coupon-desc__but">Заказать с подарком</a>
 					</div>
-					<img src="img/flashlight.png" alt="flashlight" class="coupon-img">
+					<div class="coupon-img1">
+						<img src="img/lamp.png" alt="flashlight">
+					</div>
 				</div>
 			</div>
 			<div class="head-galery owl-carousel">
 
 				<div class="head-galery__item">
 					<div class="white-tab">
-						<i class="material-icons">zoom_in</i>
-						<p class="white-tab__text">Мощное 32-кратное увеличение</p>
+						<i class="material-icons">brightness_5</i>
+						<p class="white-tab__text">Высокая светосила прибора</p>
 					</div>
-					<img src="img/item1.png" alt="binocular" class="head-galery__img">
+					<a href="img/item1@2x.png" data-fancybox="images" data-caption="My caption">
+						<img class="head-galery__img" src="img/item1.png" alt="" />
+					</a>
 				</div>
 				<div class="head-galery__item">
 					<div class="white-tab">
-						<i class="material-icons">zoom_in</i>
-						<p class="white-tab__text">Мощное 32-кратное увеличение</p>
+						<i class="material-icons">gradient</i>
+						<p class="white-tab__text">Заполненность азотом</p>
 					</div>
-					<img src="img/item2.png" alt="binocular" class="head-galery__img">
+					<a href="img/item2@2x.png" data-fancybox="images" data-caption="My caption">
+						<img class="head-galery__img" src="img/item2.png" alt="" />
+					</a>
 				</div>
 				<div class="head-galery__item">
 					<div class="white-tab">
-						<i class="material-icons">zoom_in</i>
-						<p class="white-tab__text">Мощное 32-кратное увеличение</p>
+						<i class="material-icons">zoom_out_map</i>
+						<p class="white-tab__text">Большой угол обзора</p>
 					</div>
-					<img src="img/item3.png" alt="binocular" class="head-galery__img">
+					<a href="img/item3@2x.png" data-fancybox="images" data-caption="My caption">
+						<img class="head-galery__img" src="img/item3.png" alt="" />
+					</a>
 				</div>
 
 			</div>
 		</div>
 
+	</section>
+
+	<!-- INFO -->
+
+	<div class="wrapper">
+
+	<section id="description" class="sertificat">
+		<img src="img/company.jpg" alt="sertificat" class="sertificat__img">
+		<div class="sertificat__text">
+			<h2>О компании</h2>
+			<p>Компания <b>Binoculars</b> основана в 2013 году, на данный момент мы занимаем одну из лидирующих позиций на российском рынке по продаже биноклей. Продуманная логистика, полноценное постпродажное и гарантийное обслуживание и выгодные цены предоставили нам возможность продавать не только в розницу, но и оптом, поставляя большие партии товаров по России и не только. Мы представляем оптический бренд из Германии -  Bresser.  За свои показатели качества и характеристики бинокли Bresser завоевали большую популярность среди поклонников активных видов спорта, туризма, отдыха, путешественников, охотников, рыболовов, а также среди поисковых и правоохранительных организаций.  Приобретая товар у нас, Вы приобретаете качество, официальную гарантию на 1 год, техническую поддержку, способную ответить на любые вопросы по эксплуатации устройства.</p>
+		</div>
 	</section>
 
 	<!-- BINOCULAR -->
@@ -112,7 +134,9 @@
 			</div>
 		</div>
 		<div class="binocular-desc binocular-desc1">
-			<img src="img/item2.png" alt="binocular" class="binocular-desc__img">
+			<a href="img/item2@2x.png" data-fancybox="images" data-caption="My caption">
+				<img class="head-galery__img" src="img/item2.png" alt="" />
+			</a>
 			<div class="binocular-desc__text">
 				<h3>Описание</h3>
 				<p>Популярная модель, которая подходит для различных жизненных ситуаций, включая рыбалку, охоту, туристические путешествия и наблюдение за живой природой. Произведённый с пылевлагозащитным, ударопрочным, обрезиненным корпусом с гарантией удобства эксплуатации в любых условиях, он прослужит Вам долгие годы. Современная светосильная оптика будет являться залогом идеального изображения объектов на внушительном расстоянии, даже несмотря на возможные проблемы с освещением.</p>
@@ -120,34 +144,41 @@
 		</div>
 		<div class="binocular-desc binocular-desc2">
 			<div class="binocular-desc__text">
-				<p>Популярная модель, которая подходит для различных жизненных ситуаций, включая рыбалку, охоту, туристические путешествия и наблюдение за живой природой. Произведённый с пылевлагозащитным, ударопрочным, обрезиненным корпусом с гарантией удобства эксплуатации в любых условиях, он прослужит Вам долгие годы. Современная светосильная оптика будет являться залогом идеального изображения объектов на внушительном расстоянии, даже несмотря на возможные проблемы с освещением.</p>
+				<p>Увлекаетесь охотой? Биноколь - это отличный выбор для Вас. Он поможет Вам в наблюдении на больших дистанциях благодаря 32-кратному увеличению. Также он практически не занимает места из-за чего является отличным помощником при длительных перемещениях. Удобная конструкция корпуса делает захват максимально удобным и не позволит биноклю случайно выскользнуть из рук. Тем более, бинокль выполнен с ударопрочным корпусом, что позволит использовать его в самых сложных условиях.</p>
 			</div>
-			<img src="img/item3.png" alt="binocular" class="binocular-desc__img">
+			<a href="img/item3@2x.png" data-fancybox="images" data-caption="My caption">
+				<img class="head-galery__img" src="img/item3.png" alt="" />
+			</a>
 		</div>
-		<div class="binocular-char">
+		<div id="characteristics" class="binocular-char">
 			<h3>Характеристики</h3>
 			<div class="binocular-char-wrap">
 				<ul class="char-list list-left">
-					<li>32-кратное увеличение</li>
-					<li>Линзы с многослойным просветляющим покрытием</li>
-					<li>Диаметр объектива: 40 мм</li>
-					<li>Качественное, четкое изображение</li>
-					<li>Линзы с многослойным просветляющим покрытием</li>
-					<li>Диаметр объектива: 40 мм</li>
+					<li>Увеличение: <b>40 крат</b></li>
+					<li>Диаметр объектива: <b>40 мм.</b></li>
+					<li>Поле зрения на расстоянии 1000м: <b>175 м.</b></li>
+					<li>Мин. дистанция фокусировки: <b>6 м.</b></li>
+					<li>Материал корпуса: <b>прорезиненный пластик</b></li>
+					<li>Фокусировка: <b>центральная</b></li>
+					<li>Вес: <b>530 грамм</b></li>
+					<li>Габариты: <b>145x180x55 мм</b></li>
 				</ul>
-				<img src="img/item1.png" alt="binocular" class="binocular-char__img">
+				<a href="img/item1@2x.png" data-fancybox="images" data-caption="My caption">
+					<img class="head-galery__img" src="img/item1.png" alt="" />
+				</a>
 				<ul class="char-list list-right">
-					<li>Регулировка диоптрий: да</li>
-					<li>Водонепроницаемый ударопрочный корпус</li>
-					<li>Рабочие температуры: -40 до +50 С</li>
-					<li>Вес: 850г.</li>
-					<li>Линзы с многослойным просветляющим покрытием</li>
-					<li>Диаметр объектива: 40 мм</li>
+					<li>Диоптрийная поправка: <b>±5D</b></li>
+					<li>Относительная яркость: <b>25</b></li>
+					<li>Сумеречный фактор <b>17.89</b></li>
+					<li>Конструкция: <b>Линзы с многослойным просветляющим покрытием</b></li>
+					<li>Защита от запотевания: <b>есть</b></li>
+					<li>Водонепроницаемый, ударопрочный корпус: <b>да</b></li>
+					<li>Регулировка расстояния между зрачками: <b>есть</b></li>
 				</ul>
 			</div>
 		</div>
 		<div class="button-wrap">
-			<a href="#" class="but">Сделать заказ</a>
+			<a data-fancybox data-src="#hidden-form" href="javascript:;" class="but">Сделать заказ</a>
 		</div>
 	</section>
 
@@ -159,17 +190,19 @@
 				<p class="coupon-desc__name">Акция</p>
 				<p class="coupon-desc__text"><b>Сделайте заказ сейчас</b>И получите в подарок охотничий фонарик</b></p>
 				
-				<form class="form form-opacity" action="./send.php" method="post">
+				<form class="form form-opacity" action="/send.php" method="post">
 					<input class="form_input" type="text" name='name' required placeholder="Введите Имя...">
-					<input class="form_input" type="text" name='name' required placeholder="Введите Номер телефона...">
+					<input class="form_input mask" type="text" name='name' required placeholder="Введите Номер телефона...">
 					<input type="hidden" name='landing' value="Бинокли" >
 					<input type="hidden" name='category_title' value="Бинокль">
 					<input type="hidden" name='product_title' value="BRESER">
-					<button class="btn">Получить каталог</button>
+					<button class="but">Заказать с подарком</button>
 				</form>
 
 			</div>
-		<img src="img/flashlight.png" alt="flashlight" class="coupon-img">
+			<div class="coupon-img2">
+				<img src="img/lamp.png" alt="flashlight">
+			</div>
 
 	</section>
 
@@ -187,33 +220,207 @@
 	<!-- ОТЗЫВЫ -->
 
 	<section class="reviews" id="reviews">
-		<div class="reviews-item">
-			<div class="reviews-item-left">
-				<img src="img/ot4.jpg" alt="photo" class="reviews-item__photo">
-				<div class="vote">
-					<div class="like">
-						<img src="img/like.svg" alt="like">
-						<p>7</p>
+		<h2>Отзывы</h2>
+		<div class="reviews-wrap">
+			<div class="reviews-item">
+				<div class="reviews-item-left">
+					<img src="img/ot1.jpg" alt="photo" class="reviews-item__photo">
+					<div class="vote">
+						<div class="social">
+							<i class="material-icons like">thumb_up_alt</i>
+							<p class="like-p">7</p>
+						</div>
+						<div class="social">
+							<i class="material-icons diss">thumb_down_alt</i>
+							<p class="diss-p">0</p>
+						</div>
 					</div>
-					<div class="like">
-						<img src="img/diss.svg" alt="diss">
-						<p>0</p>
+				</div>
+				<div class="revievs-item-right">
+					<h3>Виктор Петров</h3>
+					<p>пришло за три недели. Упаковано на 5+, ничего не повреждено. Объектив 40 мм. Минимальная дистанция фокусировки очень похожа на 6 м. (в сравнении с другим проверенным 40х биноклем). Максимальное тоже очень похоже на заявленные 40х. При максимальном увеличении хорошо заметно искажение прямых линий. Искажений цветов на контурах объектов почти не видно.</p>
+					<div class="revievs-item-bottom">
+						<div class="revievs-item__collage">
+						<a href="img/reviews/1_1@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/1_1.jpg" alt="" />
+						</a>
+						<a href="img/reviews/1_2@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/1_2.jpg" alt="" />
+						</a>
+						<a href="img/reviews/1_3@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/1_3.jpg" alt="" />
+						</a>
+						<a href="img/reviews/1_4@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/1_4.jpg" alt="" />
+						</a>
+						<a href="img/reviews/1_5@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/1_5.jpg" alt="" />
+						</a>
+						<a href="img/reviews/1_6@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/1_6.jpg" alt="" />
+						</a>
+						</div>
+						<p class="revievs-item__data">9 января 2017, Санкт-Петербург</p>
 					</div>
 				</div>
 			</div>
-			<div class="revievs-item-right">
-				<h3>Виктор Петров</h3>
-				<p>пришло за три недели. Упаковано на 5+, ничего не повреждено. Кому интересно ищите полный обзор по названию на mysku.ru Объектив 50 мм. Минимальное увеличение очень похоже на 8х (в сравнении с другим проверенным 8х биноклем). Максимальное тоже очень похоже на заявленные 24х. При максимальном увеличении хорошо заметно искажение прямых линий. Искажений цветов на контурах объектов почти не видно.</p>
-				<div class="revievs-item-bottom">
-					<div class="revievs-item__collage">
-						<img src="img/reviews/review1.jpg" alt="review">
-						<img src="img/reviews/review1.jpg" alt="review">
-						<img src="img/reviews/review1.jpg" alt="review">
-						<img src="img/reviews/review1.jpg" alt="review">
+			<div class="reviews-item">
+				<div class="reviews-item-left">
+					<img src="img/ot2.jpg" alt="photo" class="reviews-item__photo">
+					<div class="vote">
+						<div class="social">
+							<i class="material-icons like">thumb_up_alt</i>
+							<p class="like-p">4</p>
+						</div>
+						<div class="social">
+							<i class="material-icons diss">thumb_down_alt</i>
+							<p class="diss-p">1</p>
+						</div>
 					</div>
-					<p class="revievs-item__data">9 января 2016, Санкт-Петербург</p>
+				</div>
+				<div class="revievs-item-right">
+					<h3>Мушаков Артем</h3>
+					<p>Для своей цены и класса нормально,выбирать оптику нужно придирчиво, это линзы без брака,кратность в соотношении с размерами устройства и соответственно качеством изображения ну и т.д. Приближает без искажений примерно на 10-12-14 крат,дальше пошло ухудшение видимости. Покупкой в целом доволен.</p>
+					<div class="revievs-item-bottom">
+						<div class="revievs-item__collage"></div>
+						<p class="revievs-item__data">21 марта 2017, Ростов на Дону</p>
+					</div>
 				</div>
 			</div>
+			<div class="reviews-item">
+				<div class="reviews-item-left">
+					<img src="img/ot3.jpg" alt="photo" class="reviews-item__photo">
+					<div class="vote">
+						<div class="social">
+							<i class="material-icons like">thumb_up_alt</i>
+							<p class="like-p">3</p>
+						</div>
+						<div class="social">
+							<i class="material-icons diss">thumb_down_alt</i>
+							<p class="diss-p">0</p>
+						</div>
+					</div>
+				</div>
+				<div class="revievs-item-right">
+					<h3>Терехов Николай</h3>
+					<p>Панораму даёт достаточную для наблюдения,удобно брать с собой,не тянет,зрительное качество устраивает, панарамно смотреть удобно,в путешествия-туризм подойдёт вполне. </p>
+					<div class="revievs-item-bottom">
+						<div class="revievs-item__collage">
+						<a href="img/reviews/2_1@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/2_1.jpg" alt="" />
+						</a>
+						<a href="img/reviews/2_2@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/2_2.jpg" alt="" />
+						</a>
+						</div>
+						<p class="revievs-item__data">18 июля 2017, Керн</p>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-item">
+				<div class="reviews-item-left">
+					<img src="img/ot4.jpg" alt="photo" class="reviews-item__photo">
+					<div class="vote">
+						<div class="social">
+							<i class="material-icons like">thumb_up_alt</i>
+							<p class="like-p">5</p>
+						</div>
+						<div class="social">
+							<i class="material-icons diss">thumb_down_alt</i>
+							<p class="diss-p">0</p>
+						</div>
+					</div>
+				</div>
+				<div class="revievs-item-right">
+					<h3>Шишков Андрей</h3>
+					<p>Цена порадовала, смотрел и намного более дорогие бинокли. Покупал для разных целей, в основном посмотреть на природу и звёзды. В целом картинка чёткая, резкая, яркая, контрастная и детали выглядят очень не плохо даже по сравнению с более дорогими биноклями. Млечный путь рассыпаеться на отдельные мелкие звёзды.</p>
+					<div class="revievs-item-bottom">
+						<div class="revievs-item__collage">
+						<a href="img/reviews/3_1@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/3_1.jpg" alt="" />
+						</a>
+						<a href="img/reviews/3_2@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/3_2.jpg" alt="" />
+						</a>
+						<a href="img/reviews/3_3@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/3_3.jpg" alt="" />
+						</a>
+						</div>
+						<p class="revievs-item__data">2 ноября 2017, Бельский</p>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-item">
+				<div class="reviews-item-left">
+					<img src="img/ot5.jpg" alt="photo" class="reviews-item__photo">
+					<div class="vote">
+						<div class="social">
+							<i class="material-icons like">thumb_up_alt</i>
+							<p class="like-p">5</p>
+						</div>
+						<div class="social">
+							<i class="material-icons diss">thumb_down_alt</i>
+							<p class="diss-p">1</p>
+						</div>
+					</div>
+				</div>
+				<div class="revievs-item-right">
+					<h3>Сверидов Михаил</h3>
+					<p>На работе (я охранник) тоже Breser с первого взгляда в него как говорится влюбился решил приобрести себе для охоты рыбалки и просто позырить в окна, картинка очень светлая сумерках и ночью и не дрожит.</p>
+					<div class="revievs-item-bottom">
+						<div class="revievs-item__collage">
+						<a href="img/reviews/4_1@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/4_1.jpg" alt="" />
+						</a>
+						<a href="img/reviews/4_2@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/4_2.jpg" alt="" />
+						</a>
+						<a href="img/reviews/4_3@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/4_3.jpg" alt="" />
+						</a>
+						</div>
+						<p class="revievs-item__data">17 июня 2018, Новосибирск</p>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-item">
+				<div class="reviews-item-left">
+					<img src="img/ot6.jpg" alt="photo" class="reviews-item__photo">
+					<div class="vote">
+						<div class="social">
+							<i class="material-icons like">thumb_up_alt</i>
+							<p class="like-p">8</p>
+						</div>
+						<div class="social">
+							<i class="material-icons diss">thumb_down_alt</i>
+							<p class="diss-p">0</p>
+						</div>
+					</div>
+				</div>
+				<div class="revievs-item-right">
+					<h3>Панголинова Полина</h3>
+					<p>Это первый мой бинокль, отзывы читала здесь. У этой модели много преимуществ, качественная сборка (что немаловажно), пластиковый (лёгкий) корпус. Хорошая светосильность (у подобных моделей с похожей ценой она ниже). Считаю удачной покупкой и всем советую!</p>
+					<div class="revievs-item-bottom">
+						<div class="revievs-item__collage">
+						<a href="img/reviews/5_1@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/5_1.jpg" alt="" />
+						</a>
+						<a href="img/reviews/5_2@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__im_og" src="img/reviews/5_2.jpg" alt="" />
+						</a>
+						<a href="img/reviews/5_3@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/5_3.jpg" alt="" />
+						</a>
+						<a href="img/reviews/5_4@2x.jpg" data-fancybox="images" data-caption="Reviews">
+							<img class="head-galery__img_o" src="img/reviews/5_4.jpg" alt="" />
+						</a>
+						</div>
+						<p class="revievs-item__data">15 июля 2018, Екатиринбург</p>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 	</section>
 
@@ -223,35 +430,35 @@
 		<h2>Вопрос-Ответ</h2>
 		<div class="faq-wrap">
 			<div class="faq-item">
-				<h3>Дмитрий: Здравствуйте. Вопрос такой можно ли наблюдать за людьми которые находятся на расстояние 300-1500? Если да то как хорошо?</h3>
+				<h3><b>Дмитрий:</b> Здравствуйте. Вопрос такой можно ли наблюдать за людьми которые находятся на расстояние 300-1500? Если да то как хорошо?</h3>
 				<p>Да, в бинокль Бинокль Bresser 32х40 можно наблюдать за людьми, которые находятся на расстоянии 300-1500 м. Бинокль Bresser 32х40 имеет хорошее просветление оптики и большое поле зрения.Наблюдаемый объект будет в 10 раз ближе.</p>
 			</div>
 			<div class="faq-item">
-				<h3>Валерий: Какая степень влагозащищенности этого бинокля</h3>
+				<h3><b>Валерий:</b> Какая степень влагозащищенности этого бинокля</h3>
 				<p>Бинокль Bresser 32х40 имеет защиту от брызг.</p>
 			</div>
 			<div class="faq-item">
-				<h3>Юрий: В комплекте этой модели есть защитные крышки на стекла?</h3>
+				<h3><b>Юрий:</b> В комплекте этой модели есть защитные крышки на стекла?</h3>
 				<p>Да, в комплект бинокля Bresser 32х40 входят защитный крышечки.</p>
 			</div>
 			<div class="faq-item">
-				<h3>Сергей: Сборка этого бинокля случайно не КНР? Сколько гарантия?</h3>
+				<h3><b>Сергей:</b> Сборка этого бинокля случайно не КНР? Сколько гарантия?</h3>
 				<p>Сборка осуществляется в КНР на немецком оборудовании немецкими комплектующими. Вся партия затем вывозится в Германию для проверки качества. Поставки идут непосредственно из Германии. Гарантия 1 год.</p>
 			</div>
 			<div class="faq-item">
-				<h3>Виктория: Бинокль водонепроницаемый? Какова марка стекла?</h3>
+				<h3><b>Виктория:</b> Бинокль водонепроницаемый? Какова марка стекла?</h3>
 				<p>Бинокль Bresser 32х40 имеет водонепроницаемый корпус. Призмы и линзы изготовлены из стекла BK-7</p>
 			</div>
 			<div class="faq-action">
 				<p>Задайте свой вопрос и получите бесплатную персональную консультацию.</p>
 
-				<form class="form form-white" action="./send.php" method="post">
+				<form class="form form-white" action="/send.php" method="post">
 					<input class="form_input" type="text" name='name' required placeholder="Введите Имя...">
-					<input class="form_input" type="text" name='name' required placeholder="Введите Номер телефона...">
+					<input class="form_input mask" type="text" name='name' required placeholder="Введите Номер телефона...">
 					<input type="hidden" name='landing' value="Бинокли" >
 					<input type="hidden" name='category_title' value="Бинокль">
 					<input type="hidden" name='product_title' value="BRESER">
-					<button class="btn">Получить консультацию</button>
+					<button class="but">Получить консультацию</button>
 				</form>
 
 			</div>
@@ -277,11 +484,11 @@
 			<div class="delivery-item delivery-item__big">
 				<p class="delivery-item__name"><b>10</b> дней по России</p>
 				<div class="delivery-item__tab">
-					<h3>Доставка Почтой России</h3>
+					<h3>Доставка <b>Почтой России</b></h3>
 					<p>При выборе Способа доставки «Почта РФ» - Вы оплачиваете товар непосредственно при получении заказа в почтовых отделениях связи.</p>
 				</div>
 				<div class="delivery-item__tab">
-					<h3>Доставка ТК СДЕК</h3>
+					<h3>Доставка <b>ТК СДЕК</b></h3>
 					<p>СДЕК "Посылка склад-склад" - доставка осуществляется до выбранного вами пункта самовывоза ТК СДЕК в Вашем городе. Возможна доставка с оплатой при получении.<br>СДЕК "Посылка склад-дверь" - доставка осуществляется с оплатой при получении до вашего точного адреса.</p>
 				</div>
 			</div>
@@ -291,6 +498,7 @@
 	<!-- PAY -->
 
 	<section class="pay" id="pay">
+		<h2>Оплата</h2>
 		<div class="pay-item">
 			<img src="img/pay3.svg" alt="pay">
 			<div class="pay-item-text">
@@ -304,51 +512,55 @@
 		</div>
 		<div class="pay-item">
 			<img src="img/pay2.svg" alt="pay">
-			<div class="pay-item">
+			<div class="pay-itemz">
 				<h3>Оплата в режиме онлайн</h3>
 				<p>Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз АЛЬФАБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard SecureCode для проведения платежа также может потребоваться ввод специального пароля.</p>
 			</div>
 		</div>
 		<div class="pay-item">
 			<img src="img/pay1.svg" alt="pay">
-			<div class="pay-item">
+			<div class="pay-itemz">
 				<h3>Безналичный расчет</h3>
 				<p>Оплата по безналичному расчету для юридических лиц и индивидуальных предпринимателей на основании счета. Для получения счета необходимо отправить запрос в свободной форме и прикрепить реквизиты вашей организации на наш адрес электронной почты (см. Контакты). После согласования заказа клиенту выставляется счёт для оплаты в котором будут проставлены реквизиты и указана сумма. Распечатанный счет можно оплатить любым удобным для вас способом (например, через систему Банк-клиент). Оригиналы бухгалтерских документов высылаются вместе с покупкой.</p>
 			</div>
 		</div>
 	</section>
 
+	</div>
+
 	<section class="contacts" id="contacts">
 		<h2 class="contacts__title">Как нас найти</h2>
 		<div class="contacts-wrap">
-			<div class="contacts-tiem">
+			<div class="contacts-item">
 				<h3>г. САНКТ-ПЕТЕРБУРГ</h3>
 				<p>м. Площадь Восстания<br>Лиговский пр., д. 50, к. 16, офис 112.</p>
 				<a href="tel:+78127482669">8 (812) 748-26-69</a>
 			</div>
-			<div class="contacts-tiem">
+			<div class="contacts-item">
 				<h3>г. МОСКВА</h3>
 				<p>м. Семеновская<br>Семеновский пер., д. 4.</p>
-				<a href="tel:+74991108246"></a>
+				<a href="tel:+74991108246">8 (499) 110-82-46</a>
 			</div>
 		</div>
 		
 		<h2 class="form__title">Закажите обратный звонок</h2>
 
-		<form class="form form-white" action="./send.php" method="post">
+		<form class="form form-white" action="/send.php" method="post">
 			<input class="form_input" type="text" name='name' required placeholder="Введите Имя...">
-			<input class="form_input" type="text" name='name' required placeholder="Введите Номер телефона...">
+			<input class="form_input mask" type="text" name='name' required placeholder="Введите Номер телефона...">
 			<input type="hidden" name='landing' value="Бинокли" >
 			<input type="hidden" name='category_title' value="Бинокль">
 			<input type="hidden" name='product_title' value="BRESER">
-			<button class="btn">Получить консультацию</button>
+			<button class="but">Получить консультацию</button>
 		</form>
 
-		<footer class="header">
+		<div class="footer-wrap">
+			
+		<footer class="header footer">
 			<div class="logo-cont">
 				<div class="logo">
-					<img class="logo__img" src="img/binocular.svg" alt="binocular">
-					<p class="logo__name"><span>Russian</span> Binoculars</p>
+					<img class="logo__img" src="img/binoculars.svg" alt="binocular">
+					<p class="logo__name">Binoculars</p>
 				</div>
 				<p class="logo-cont__desc">Интернет-Магазин Биноклей</p>
 			</div>
@@ -356,7 +568,6 @@
 				<a href="#description" class="nav__button">О компании</a>
 				<a href="#characteristics" class="nav__button">Характеристики</a>
 				<a href="#reviews" class="nav__button">Отзывы</a>
-				<a href="#faq" class="nav__button">Вопрос-Ответ</a>
 				<a href="#delivery" class="nav__button">Доставка</a>
 				<a href="#pay" class="nav__button">Оплата</a>
 				<a href="#contacts" class="nav__button">Контакты</a>
@@ -367,7 +578,24 @@
 			</div>
 		</footer>
 
+		</div>
+
 	</section>
+
+<div style="display: none;" id="hidden-form">
+	<h2>Для совершения заказа заполните поля ниже</h2>
+
+		<form class="form form-white" action="/send.php" method="post">
+			<input class="form_input" type="text" name='name' required placeholder="Введите Имя...">
+			<input class="form_input mask" type="text" name='name' required placeholder="Введите Номер телефона...">
+			<input type="hidden" name='landing' value="Бинокли" >
+			<input type="hidden" name='category_title' value="Бинокль">
+			<input type="hidden" name='product_title' value="BRESER">
+			<button class="but">Заказать</button>
+		</form>
+
+
+</div>
 
 
 	<script src="js/scripts.min.js"></script>

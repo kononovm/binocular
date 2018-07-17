@@ -39,6 +39,7 @@ gulp.task('js', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/fancybox-master/dist/jquery.fancybox.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
+		'app/libs/jquery.maskedinput-master/dist/jquery.maskedinput.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

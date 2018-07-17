@@ -10,7 +10,7 @@
 	color: #fff
 
 body
-	font-size: 16px
+	font-size: 18px
 	min-width: 320px
 	position: relative
 	font-family: $default-font, Arial, sans-serif
@@ -30,6 +30,7 @@ a
 
 a, button
 	outline: none
+	cursor: pointer
 
 h2
 	font-size: 28px
@@ -75,10 +76,12 @@ h3
 			font-size: 20px
 	.logo-cont__desc
 		margin: 0
+		font-size: 16px
 
 .nav
 	.nav__button
 		text-decoration: none
+		font-size: 16px
 		color: #333
 		padding: 10px 20px
 		text-transform: uppercase
@@ -99,6 +102,8 @@ h3
 				transition: .3s
 
 .phone
+	position: relative
+	z-index: 3
 	.phone__number
 		font-size: 20px
 		font-weight: 700
@@ -124,7 +129,7 @@ h3
 	margin: 0
 
 .left-content__price
-	font-size: 34px
+	font-size: 40px
 	font-weight: 700
 	span
 		font-size: 20px
@@ -157,10 +162,11 @@ h3
 			b
 				display: block
 		.coupon-desc__but
-			padding: 20px 100px
-	.coupon-img
-		height: 150px
-		padding: 30px 65px 0 0
+			padding: 20px 90px
+	.coupon-img1
+		img
+			width: 80px
+			padding: 15px 50px
 
 .but
 	color: #fff
@@ -192,7 +198,7 @@ h3
 			margin: 0 15px 20px 15px
 			border-radius: 30px
 			i
-				margin-right: 10px
+				margin-right: 20px
 	.owl-nav
 		text-align: center
 		position: relative
@@ -204,7 +210,7 @@ h3
 			box-shadow: $shadow
 			margin: 0 20px
 			border-radius: 100%
-			line-height: 4em
+			line-height: 3.5em
 			&:hover
 				color: $accent
 				transition: .3s
@@ -327,4 +333,242 @@ h3
 			font-weight: 300
 			b
 				font-weight: 700
+	.coupon-img2
+		padding: 30px 90px 0 0
+.form
+	display: flex
+	width: 100%
+.form_input
+	background-color: rgba(255,255,255, .7)
+	padding: 15px 30px
+	width: 190px
+	border-radius: 10px
+	margin-right: 20px
+	&::placeholder
+		font-size: 16px
+		color: #000
+
+.sertificat
+	width: 1240px
+	margin: 0 auto
+	align-items: center
+	display: flex
+.sertificat__text
+	margin-left: 40px
+	h2
+		text-align: left	
+	p
+		font-size: 20px
+
+.reviews
+	width: 1240px
+	margin: 0 auto
+	h2:before
+		left: calc(50% - 35px)
+
+.reviews-wrap
+	background-color: #fff
+	border-radius: 10px
+	box-shadow: $shadow
+	padding: 0 30px
+
+.reviews-item
+	display: flex
+	padding: 30px 0
+	border-bottom: 1px solid #acacac
+	&:last-child
+		border-bottom: none
+.reviews-item__photo
+	border-radius: 10px
+	box-shadow: $shadow
+.vote
+	display: flex
+	justify-content: center
+.social
+	flex: 1
+	margin: 20px 0
+	text-align: center
+	i
+		cursor: pointer
+		color: #666
+	.activeL
+		color: #298800
+	.activeD
+		color: #EE2222
+
+.revievs-item-right
+	margin-left: 40px
+	h3
+		margin: 0
+	p
+		font-size: 18px
+	.revievs-item-bottom
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.revievs-item__data
+		font-size: 16px
+		color: #777
+
+.revievs-item__collage img
+	margin-right: 10px
+	border-radius: 10px
+	box-shadow: $shadow
+
+.faq
+	width: 1240px
+	margin: 50px auto
+	h2:before
+		left: calc(50% - 35px)
+
+.faq-wrap
+	background-color: #fff
+	border-radius: 10px
+	box-shadow: $shadow
+	padding: 20px 40px
+.form-white
+	justify-content: center
+	margin: 20px 0
+
+.faq-action p 
+	text-align: center
+	font-size: 26px
+	font-weight: 700
+	margin-top: 60px
+
+.faq-item
+	margin-bottom: 40px
+	margin-left: 30px 
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		width: 4px
+		height: 100%
+		left: -30px
+		top: 0
+		background-color: $accent
+	p
+		font-size: 18px
+	h3:before
+		display: none
+
+.delivery
+	width: 1240px
+	margin: 0 auto
+	padding: 20px 0 80px 0
+	background-image: url('../img/map.jpg')
+	background-size: contain
+	background-repeat: no-repeat
+	h2:before
+		left: calc(50% - 35px)
+
+.delivery-wrap
+	display: flex
+	justify-content: space-between
+.delivery-item
+	background-color: rgba(255,255,255, .8)
+	box-shadow: $shadow
+	padding: 30px
+.delivery-item__smoll
+	flex: 2
+.delivery-item__big
+	margin-left: 40px
+	flex: 3
+.delivery-item__name
+	font-size: 30px
+	margin: 0
+	b
+		font-size: 34px
+
+.pay
+	width: 1240px
+	margin: 0 auto
+	h2:before
+		left: calc(50% - 35px)
+
+
+.pay-item
+	display: flex
+	img
+		width: 80px
+		margin-right: 40px
+
+.contacts
+	background-image: url('../img/les.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	h2:before
+		left: calc(50% - 35px)
+.contacts-wrap
+	width: 1240px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+.contacts-item
+	text-align: center
+	flex: auto
+	margin-bottom: 40px
+	h3:before
+		left: calc(50% - 35px)
+	p
+		font-size: 18px
+	a
+		font-size: 24px
+		font-weight: 700
+		color: #333
+		&:hover
+			color: $accent
+			transition: .3s
+
+.footer-wrap
+	margin-top: 60px
+	padding: 20px 0
+	background-color: rgba(0,0,0, .5)
+	.footer
+		color: #fff
+	.nav__button
+		color: #fff
+	.phone__number
+		color: #fff
+
+#hidden-form
+	h2:before
+		left: calc(50% - 35px) 
+	form 
+		flex-direction: column
+		input
+			width: 100%
+			margin-bottom: 20px
+
+#go-top
+	position: fixed
+	color: #fff
+	bottom: 25px
+	right: 25px
+	padding: 20px
+	cursor: pointer
+	display: none
+	font-size: 24px
+	border-radius: 50%
+	background-color: rgba(246,148,53, .5)
+	&:hover
+		background-color: rgba(246,148,53, .8)
+		transition: .3s
+
+.hidden-wrap
+	position: relative
+	z-index: 2
+	display: flex
+
+.nav-h
+	background-color: #333
+	color: #fff
+	padding: 10px 13px
+	margin: 0 10px
+	border-radius: 50%
+	display: none
+	i
+		font-size: 20px
+
 @import "media" // Always at the end

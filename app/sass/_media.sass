@@ -1,1 +1,249 @@
 @import "vars"
+
+@media only screen and (max-width : 1250px)
+	.header,
+	.main-content,
+	.top-char,
+	.binocular-desc,
+	.binocular-char,
+	.coupon2,
+	.sertificat,
+	.reviews,
+	.faq,
+	.delivery,
+	.pay,
+	.contacts-wrap
+		width: 100%
+	.main
+		padding: 0 20px
+	.nav
+		position: absolute
+		display: none
+		top: 0
+		z-index: 2
+		background-color: #333
+		padding: 70px 20px 20px 20px
+		right: 0
+		.nav__button
+			color: #fff
+			display: block
+	.wrapper, .footer-wrap
+		padding: 0 20px
+	.coupon2
+		background-size: 200%
+		background-position: center
+		.coupon-img2
+			padding: 0 
+		.coupon-desc
+			width: 100%
+			padding: 20px
+	.menu-hidden
+		display: flex
+
+@media only screen and (max-width : 1200px)
+	.coupon2 .coupon-img2
+		display: none
+
+@media only screen and (max-width : 1150px)
+	body
+		font-size: 16px
+	.coupon .coupon-desc .coupon-desc__but
+		padding: 10px 20px
+
+@media only screen and (max-width : 1056px)
+	.top-char
+		flex-direction: column
+		.top-char2
+			margin: 0
+		.top-char-item
+			margin: 10px 0
+
+@media only screen and (max-width : 1020px)
+	.binocular-desc .binocular-desc__text
+		font-size: 16px
+	.head-galery__img
+		width: 230px
+	.binocular-char
+		margin: 60px 0
+		font-size: 16px
+	.binocular-char-wrap
+		font-size: 16px
+	.coupon3
+		background-image: none
+	.coupon3
+		.coupon-desc__text
+			color: #333
+	.coupon3
+		.coupon-img1
+			display: none
+		.coupon-desc
+			padding: 0
+
+@media only screen and (max-width : 800px)
+	.coupon
+		.coupon-desc__text
+			color: #333
+	.form
+		flex-direction: column
+	.form_input
+		width: 100%
+		padding: 15px 0
+		margin-bottom: 15px
+		text-align: center
+	.coupon-desc__name
+		margin: 0 
+		text-align: center
+	.coupon2 .coupon-desc .coupon-desc__text
+		margin: 0 
+		text-align: center
+		font-size: 22px
+	.main-content
+		flex-direction: column
+	.binocular-char-wrap
+		flex-direction: column
+		align-items: center
+	.head-galery__img
+		display: none
+	.binocular-char-wrap .list-left, .binocular-char-wrap .list-right
+		padding: 0
+		margin: 0
+		li
+			text-align: center
+			&:before
+				display: none
+			&:after
+				display: none
+	.binocular-desc1 .binocular-desc__text
+		margin-left: 0
+	.sertificat__img
+		display: none
+	.delivery
+		padding: 0
+	.delivery-wrap
+		flex-direction: column
+	.delivery-item
+		margin: 20px 0
+	.coupon
+		background-image: none
+		height: 160px
+
+	.left-content h1
+		font-size: 30px
+		text-align: center
+	.header
+		padding-bottom: 0
+	.main-content
+		margin-top: 10px
+	.left-content__utp
+		text-align: center
+		font-size: 20px
+	.left-content__price
+		margin: 0
+		text-align: center
+		font-size: 30px
+	.coupon
+		justify-content: center
+		text-align: center
+	.head-galery
+		margin: 0 auto
+		position: relative
+		.head-galery__item .white-tab
+			display: none
+		.owl-nav
+			position: static
+			button.owl-prev
+				position: absolute
+				top: 30%
+				left: -40px
+			button.owl-next
+				position: absolute
+				top: 30%
+				right: -40px
+	.coupon2
+		height: 280px
+	.revievs-item-right .revievs-item__data
+		display: none
+	.contacts
+		padding: 0 20px
+	.sertificat__text
+		margin-left: 0
+		h2
+			text-align: center
+			&:before
+				left: calc(50% - 35px)
+@media only screen and (max-width : 560px)
+	.phone
+		display: none
+	.phone-hidden
+		display: block
+	.contacts-wrap
+		flex-direction: column
+@media only screen and (max-width : 470px)
+	.sertificat__text p
+		font-size: 16px
+	.revievs-item-right p
+		font-size: 16px
+	.reviews-item-left
+		display: none
+	.revievs-item-right
+		margin-left: 0
+	h3
+		font-size: 18px
+	.faq-item p
+		font-size: 16px
+	h2
+		font-size: 20px
+	.left-content h1
+		font-size: 22px
+	.left-content__utp
+		font-size: 16px
+		padding: 7px 0
+	.coupon3 .coupon-desc .coupon-desc__text
+		font-size: 16px
+	.head-galery
+		width: 100%
+	.logo__name
+		display: none
+	.logo-cont__desc
+		display: none
+	.left-content__utp
+		display: none
+	.left-content h1
+		font-size: 17px
+	.coupon3
+		height: 140px
+	.binocular__name
+		margin-top: -30px
+	.coupon2 .coupon-desc .coupon-desc__text
+		font-size: 20px
+	.faq-wrap
+		padding: 10px
+	.faq-item
+		margin-left: 0
+		&:before
+			display: none
+	.faq-action p
+		font-size: 16px
+		margin-top: 0
+	.delivery-item__name
+		font-size: 18px
+		b
+			font-size: 24px
+	.pay-item img
+		display: none
+	.form__title
+		color: #fff
+		&:before
+			background-color: #fff
+
+	.footer
+		display: none
+	.contacts
+		padding: 1px 20px
+	.sertificat__text p
+		padding-bottom: 40px
+	.binocular-char-wrap
+		align-items: flex-start
+	.binocular-char-wrap .list-left, .binocular-char-wrap .list-right
+		li
+			text-align: left
