@@ -12,7 +12,8 @@
 	.faq,
 	.delivery,
 	.pay,
-	.contacts-wrap
+	.contacts-wrap,
+	.galery__wrap
 		width: 100%
 	.main
 		padding: 0 20px
@@ -39,7 +40,10 @@
 			padding: 20px
 	.menu-hidden
 		display: flex
-
+	.header
+		padding: 10px 0
+	.main-content
+		margin: 20px auto
 @media only screen and (max-width : 1200px)
 	.coupon2 .coupon-img2
 		display: none
@@ -102,8 +106,9 @@
 	.binocular-char-wrap
 		flex-direction: column
 		align-items: center
-	.head-galery__img
-		display: none
+	.binocular-desc2
+		.binocular-desc__text
+			order: 2
 	.binocular-char-wrap .list-left, .binocular-char-wrap .list-right
 		padding: 0
 		margin: 0
@@ -113,10 +118,27 @@
 				display: none
 			&:after
 				display: none
+	.binocular-desc
+		flex-direction: column
+		align-items: center
+
+	.binocular-desc1
+		.binocular-desc__text
+			margin-left: 0
+	.binocular-desc2
+		.binocular-desc__text
+			margin-right: 0
+	.binocular-desc3
+		.binocular-desc__text
+			margin-left: 0
+	.binocular-char-wrap img
+		display: none
+
+	.binocular-char .button-wrap
+		margin-top: 40px	
+
 	.binocular-desc1 .binocular-desc__text
 		margin-left: 0
-	.sertificat__img
-		display: none
 	.delivery
 		padding: 0
 	.delivery-wrap
@@ -160,7 +182,7 @@
 				top: 30%
 				right: -40px
 	.coupon2
-		height: 280px
+		height: 400px
 	.revievs-item-right .revievs-item__data
 		display: none
 	.contacts
@@ -171,6 +193,13 @@
 			text-align: center
 			&:before
 				left: calc(50% - 35px)
+
+	.sertificat
+		flex-direction: column
+	.bin-hor
+		display: block
+		margin: 10px auto
+
 @media only screen and (max-width : 560px)
 	.phone
 		display: none
@@ -178,13 +207,16 @@
 		display: block
 	.contacts-wrap
 		flex-direction: column
+	#description
+		display: none
 @media only screen and (max-width : 470px)
 	.sertificat__text p
 		font-size: 16px
 	.revievs-item-right p
 		font-size: 16px
-	.reviews-item-left
-		display: none
+	.reviews-item
+		flex-direction: column
+		align-items: center
 	.revievs-item-right
 		margin-left: 0
 	h3
@@ -247,3 +279,7 @@
 	.binocular-char-wrap .list-left, .binocular-char-wrap .list-right
 		li
 			text-align: left
+	.sertificat__text p:last-child
+		display: none
+	.galery__item
+		width: 100%
